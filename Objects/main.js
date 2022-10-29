@@ -84,6 +84,7 @@ let playerOne = {
     name: 'Tyler',
     HP: 100,
     damage: 15,
+    
 }
 let playerTwo = {
     name: 'Chuck',
@@ -93,6 +94,30 @@ let playerTwo = {
 
 //exercise 10.2
 
-playerOne.attack = () => playerOne.HP -= playerTwo.damage
-playerTwo.attack = () => playerTwo.HP -= playerOne.damage
+// playerOne.attack = (enemy) => enemy.HP -= playerOne.damage
 
+// playerTwo.attack = (enemy) => enemy.HP -= playerTwo.damage
+// playerOne.attack(playerTwo)
+// playerTwo.attack(playerOne)
+
+//exercise 10.3
+
+console.log(playerOne, playerTwo);
+
+//exercise 10.4 ?
+
+function fight(Tyler, Chuck) {
+    for (let i = 0; i <= playerTwo.HP; i++) {
+        playerOne.attack = (enemy) => {
+            enemy.HP -= playerOne.damage
+            if (enemy.HP <= 0) {
+                enemy.HP = 0
+            }
+        }
+        playerOne.attack(playerTwo)
+        let numberOfAttacks = (i.length)
+        console.log(`${playerOne.name} ha derrotado a ${playerTwo.name} en ${numberOfAttacks} rondas`)
+    }
+}
+fight(playerOne, playerTwo)
+console.log(playerOne, playerTwo);
