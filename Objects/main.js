@@ -78,4 +78,18 @@ function deleteLastProp(citizen) {
 }
 deleteLastProp(citizen1)
 
-//exercise 10
+//exercise 10.1
+
+let objOne = {
+    name: 'Tyler',
+    HP: 100,
+    damage: 15,
+}
+let objTwo = {
+    name: 'Chuck',
+    HP: 80,
+    damage: 10,
+}
+
+//exercise 10.2
+
