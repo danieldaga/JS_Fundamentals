@@ -74,6 +74,26 @@ evalOperation(1,2,'-')
 //exercise 6
 
 function isLeapYear(year) {
-    
-    return 
+    if (year % 4 === 0) {
+        return console.log('es bisiesto');
+    }else{
+        return console.log('No es bisiesto');
+    }
 }
+isLeapYear(2024)
+
+//exercise 7
+
+function numDaysOfMonth(num) {
+    let month = prompt('Escribe del 1 al 12 el mes que quieres saber los días que tiene')
+
+    if (month >=12 || month < 1) {
+    return alert('Introduce un mes valido')
+    }
+    if (month = 1 || 3 || 5 || 7 || 8 || 10 || 12) {
+        return alert('Este mes tiene 31 días')
+    } else{
+        return alert('Este mes tiene 30 días')
+    }
+}
+numDaysOfMonth()
