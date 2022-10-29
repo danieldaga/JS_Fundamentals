@@ -36,10 +36,11 @@ largestNum()
 
 function triangle(lado1, lado2, lado3) {
     if (lado1 === lado2 === lado3) {
-        return ('The triangle is equilateral')
+        return 'The triangle is equilateral'
     }else if(lado1 === lado2 || lado1 === lado3 || lado3 === lado2){
-        return ('The triangle is isosceles')
+        return 'The triangle is isosceles'
     }else{
-        return ('The triangle is scalene')
+        return 'The triangle is scalene'
     }
 }
+triangle()
