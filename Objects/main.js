@@ -80,16 +80,19 @@ deleteLastProp(citizen1)
 
 //exercise 10.1
 
-let objOne = {
+let playerOne = {
     name: 'Tyler',
     HP: 100,
     damage: 15,
 }
-let objTwo = {
+let playerTwo = {
     name: 'Chuck',
     HP: 80,
     damage: 10,
 }
 
 //exercise 10.2
+
+playerOne.attack = () => playerOne.HP -= playerTwo.damage
+playerTwo.attack = () => playerTwo.HP -= playerOne.damage
 
