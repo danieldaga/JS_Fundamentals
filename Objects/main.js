@@ -47,7 +47,7 @@ console.log(citizen1);
 let citizen2 = createCitizen('jose', 'rodriguez', 89)
 console.log(citizen2);
 
-//exercise 6
+//exercise 6 ¿?¿?¿
 let newCitizen = citizen1
 function checkVoting (newCitizen) {
     if (newCitizen.hasOwnProperty('canVote')) {

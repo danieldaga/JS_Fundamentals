@@ -44,3 +44,36 @@ function triangle(lado1, lado2, lado3) {
     }
 }
 triangle()
+
+//exercise 4
+
+function isInRange(num, start, end) {
+    if (num > start && num < end) {
+        return console.log('is true')
+    }else{
+        return console.log('is false')
+    }
+}
+isInRange(3,1,10)
+
+//exercise 5
+
+function evalOperation(num1, num2, operation) {
+    if (operation === '+') {
+        return num1 + num2
+    }else if(operation === '-'){
+        return num1 - num2
+    }else if(operation === '*'){
+        return num1 * num2
+    }else if(operation === '/'){
+        return num1 / num2
+    }
+}
+evalOperation(1,2,'-')
+
+//exercise 6
+
+function isLeapYear(year) {
+    
+    return 
+}
