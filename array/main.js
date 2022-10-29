@@ -45,15 +45,8 @@ let positionWednesday = days.indexOf('Wednesday')
 let lengthWednesday = days.length[2]
 function position(posi) {
     if (lengthWednesday > positionWednesday) {
-        return days.reverse()
+        return console.log(days.reverse(days))
     }
 }
-position()
+position(2)
 
-console.log(days);
-
-//exercise 3.2
-
-function compare(element1, element2) {
-
-}
