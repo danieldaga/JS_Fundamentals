@@ -34,7 +34,7 @@ function changeArray(num1, num2, num3) {
     }
 }
 
-changeArray(7, 7, 7)
+changeArray(7, 24, 7)
 console.log(totalMonths);
 
 //exercise 3.1
