@@ -37,3 +37,23 @@ function changeArray(num1, num2, num3) {
 changeArray(5, 24, 8)
 console.log(totalMonths);
 
+//exercise 3.1
+
+const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
+let positionWednesday = days.indexOf('Wednesday')
+let lengthWednesday = days.length[2]
+function position(posi) {
+    if (lengthWednesday > positionWednesday) {
+        return days.reverse()
+    }
+}
+position()
+
+console.log(days);
+
+//exercise 3.2
+
+function compare(element1, element2) {
+
+}
