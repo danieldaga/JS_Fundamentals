@@ -11,23 +11,33 @@ evenOdd(11)
 
 //exercise 2
 
-function moreLargest(num1, num2) {
-    if (num1 > num2) {
-        return ('The largest number is '[num1])
-    }else if (num1 < num2){
-        return ('The largest number is '[num2])
-    }else{
-        return ('The numbers are equal')
+function largestNum() {
+
+    let num1 = prompt('ingrese un numero')
+    let num2 = prompt('ingrese un numero')
+
+    if (!Number.isInteger(num1 * 1) || !Number.isInteger(num2 * 1)) {
+        alert("mete números tío")
+        largestNum()
+        return
+    }
+    if (num1 < num2) {
+        console.log('Este numero es el mayor', num2)
+    } else if (num1 > num2) {
+        console.log('Este numero es el mayor', num1)
+    } else {
+        console.log('Son iguales')
     }
 }
-moreLargest (2, 1)
+
+largestNum()
 
 //exercise 3
 
 function triangle(lado1, lado2, lado3) {
     if (lado1 === lado2 === lado3) {
         return ('The triangle is equilateral')
-    }else if(lado1 === lado2 < lado3){
+    }else if(lado1 === lado2 || lado1 === lado3 || lado3 === lado2){
         return ('The triangle is isosceles')
     }else{
         return ('The triangle is scalene')

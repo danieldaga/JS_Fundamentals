@@ -27,4 +27,9 @@ checkCitizenship()
 console.log(citizen1);
 
 //exercise 4
-
+let name = citizen1.name
+let lastname = citizen1.lastname
+let age = citizen1.age
+function createCitizen(name, lastname, age){
+    
+}
