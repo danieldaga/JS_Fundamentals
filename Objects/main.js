@@ -59,13 +59,23 @@ function checkVoting (newCitizen) {
 }
 checkVoting(citizen1)
 
-//exercise 8 
+//exercise 8
 
-function showValues(object) {
-    
+    function showValues(citizen1){
+    Object.values(citizen1)
+    return
 }
+showValues(citizen1)
 
+//exercise 9
 
+function deleteLastProp(citizen) {
+    if (Object.keys(citizen).length > 4) {
+        delete citizen.canVote()
+    }else if(Object.keys(citizen).length <= 4){
+        return false
+    }
+}
+deleteLastProp(citizen1)
 
-
-
+//exercise 10

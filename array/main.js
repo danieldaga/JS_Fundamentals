@@ -24,11 +24,13 @@ console.log(totalMonths);
 
 function changeArray(num1, num2, num3) {
     if (num1 > num2) {
-        return totalMonths.pop()
-    }else if (num2 > num3 < 10){
-        return totalMonths.shift()
-    }else if (num2 > num3 || num2 > num1) {
-        return totalMonths.push('October')
+        totalMonths.pop()
+    }
+    if (num2 > num3 && num2 < 10){
+        totalMonths.shift()
+    }
+    if (num2 > num3 || num2 > num1) {
+        totalMonths.push('October')
     }else{
         console.log('Bad Luck')
     }
