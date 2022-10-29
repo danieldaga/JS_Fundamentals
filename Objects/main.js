@@ -104,9 +104,10 @@ let playerTwo = {
 
 console.log(playerOne, playerTwo);
 
-//exercise 10.4 ?
+//exercise 10.4 
 
 function fight(Tyler, Chuck) {
+    let numberOfAttacks = 0 //contador
     for (let i = 0; i <= playerTwo.HP; i++) {
         playerOne.attack = (enemy) => {
             enemy.HP -= playerOne.damage
@@ -115,9 +116,9 @@ function fight(Tyler, Chuck) {
             }
         }
         playerOne.attack(playerTwo)
-        let numberOfAttacks = (i.length)
-        console.log(`${playerOne.name} ha derrotado a ${playerTwo.name} en ${numberOfAttacks} rondas`)
-    }
+        numberOfAttacks ++
+    } 
+    console.log(`${playerOne.name} ha derrotado a ${playerTwo.name} en ${numberOfAttacks} rondas`)
 }
 fight(playerOne, playerTwo)
 console.log(playerOne, playerTwo);
