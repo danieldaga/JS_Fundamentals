@@ -39,16 +39,23 @@ function changeArray(num1, num2, num3) {
 changeArray(7, 24, 7)
 console.log(totalMonths);
 
-//exercise 3.1
+//exercise 3
 
 const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
-let positionWednesday = days.indexOf('Wednesday')
-let lengthWednesday = days.length[2]
-function position(posi) {
-    if (lengthWednesday > positionWednesday) {
-        return console.log(days.reverse(days))
-    }
-}
-position(2)
+//exercise 3.1
 
+function searchWed(array) {
+    array.indexOf('Wednesday')  //indice 2
+    if (array[2].length > array.indexOf('Wednesday')) {
+        array.reverse()
+    }
+    // console.log(array);
+}
+searchWed(days)
+
+//exercise 3.2
+
+function searchSunday (array) {
+    
+}
