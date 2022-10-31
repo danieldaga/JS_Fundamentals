@@ -41,7 +41,7 @@ console.log(totalMonths);
 
 //exercise 3
 
-const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
 //exercise 3.1
 
@@ -57,11 +57,10 @@ const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
 
 function compare (array) {
     if (array[0].length < array[1].length) {
-        return array[0,1,2]
+        return array.slice(0,3)
     }
-    console.log(array);
 }
-compare(days)
+console.log(compare(days));
 
 //exercise 3.3
 
