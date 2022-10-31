@@ -80,13 +80,12 @@ console.log(days);
 
 //exercise 4
 
-let str = ('Paralelepípedo')
-function vuelta (array) {
-    let arr = array.split('')
-    return arr.reverse()
 
-} 
-vuelta(str)
+function vuelta (string) {
+    console.log(string.split("").reverse().join(""))
+    return
+}
+vuelta('Paralelepípedo')
 
 //exercise 5
 
