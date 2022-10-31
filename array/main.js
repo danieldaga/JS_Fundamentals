@@ -81,8 +81,14 @@ console.log(days);
 //exercise 4
 
 let str = ('Paralelepípedo')
-function vuelta (string) {
-    string.split(0,14)
-    console.log(str);
-}
+function vuelta (array) {
+    let arr = array.split('')
+    return arr.reverse()
+
+} 
 vuelta(str)
+
+//exercise 5
+
+let swap = (arr) => arr.reverse()  //se le dan los dos datos del array al llamar a la funcion.
+console.log(swap([4, 7]));  
