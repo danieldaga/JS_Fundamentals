@@ -65,11 +65,15 @@ checkVoting(citizen1)
 //exercise 8
 
 function showValues(obj){
-    for (let i = 0; i < Object.values(obj).length; i++) {
-        console.log(Object.values(obj)[i]);
-    }
+    // for (let i = 0; i < Object.values(obj).length; i++) {
+    //     console.log(Object.values(obj)[i]);
+    // }
+    Object.values(obj).forEach(e =>{
+        console.log(e)
+    })
     return
 }
+
 showValues(citizen1)
 
 //exercise 9
