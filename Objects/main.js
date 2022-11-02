@@ -14,12 +14,13 @@ citizen1.age = 28
 console.log(citizen1);
 
 //exercise 3
-let citizen = citizen1
 function checkCitizenship(citizen) {
     if (citizen1.age >= 18) {
         citizen1.canVote = true
+        return
     }else{
         citizen1.canVote = false
+        return
     }
 }
 
@@ -31,11 +32,13 @@ let name = citizen1.name
 let lastname = citizen1.lastname
 let age = citizen1.age
 function createCitizen(name, lastname, age){
-    if (name &&lastname && age) {
-        return citizen1 = {
-            name: name,
-            lastname: lastname,
-            age: age,
+    if (!typeof name === 'string' || !typeof lastname === 'string' || !typeof age === 'num') {
+        return 'invalid parameters'
+        }else{
+            return citizen1 = {
+                name: name,
+                lastname: lastname,
+                age: age,
         }
     }
 }
@@ -61,8 +64,10 @@ checkVoting(citizen1)
 
 //exercise 8
 
-    function showValues(citizen1){
-    Object.values(citizen1)
+function showValues(obj){
+    for (let i = 0; i < Object.values(obj).length; i++) {
+        console.log(Object.values(obj)[i]);
+    }
     return
 }
 showValues(citizen1)
@@ -77,6 +82,7 @@ function deleteLastProp(citizen) {
     }
 }
 deleteLastProp(citizen1)
+console.log(citizen1);
 
 //exercise 10.1
 
